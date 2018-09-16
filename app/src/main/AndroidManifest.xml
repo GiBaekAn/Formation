@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.formation">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/iconsci"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name=".MusicService">
+            <intent-filter>﻿
+                <action android:name="com.Example.service.test" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>//
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>//
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/kakao_scheme" android:host="@string/kakaolink_host" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity
+            android:name=".LoadingActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".RegistryClass"
+            android:label="RegistryClass" />
+        <activity
+            android:name=".MainButtonActivity"
+            android:label="MainButtonActivity" />
+        <activity
+            android:name=".SoccerActivity"
+            android:label="SoccerActivity">
+        </activity>
+        <activity
+            android:name=".BasketballActivity"
+            android:label="BasketballActivity" />
+        <activity
+            android:name=".FootballActivity"
+            android:label="FootballActivity" />
+        <activity
+            android:name=".SoccerActivity2"
+            android:label="SoccerActiity2" />
+        <activity
+            android:name=".SoccerActivity3"
+            android:label="SoccerActiity3" />
+        <activity
+            android:name=".SoccerActivity4"
+            android:label="SoccerActiity4" />
+        <activity
+            android:name=".SoccerActivity5"
+            android:label="SoccerActiity5" />
+        <activity
+            android:name=".SoccerActivity6"
+            android:label="SoccerActiity6" />
+        <activity
+            android:name=".SoccerActivity7"
+            android:label="SoccerActiity7" />
+        <activity
+            android:name=".SoccerActivity8"
+            android:label="SoccerActiity8" />
+        <activity
+            android:name=".SoccerActivity9"
+            android:label="SoccerActiity9" />
+        <activity
+            android:name=".Baseball_Deffense"
+            android:label="Baseball_Deffense" />
+        <activity
+            android:name=".FindActivity"
+            android:label="FindActivity" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/back2"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player1_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/aa" />
+
+            <EditText
+                android:id="@+id/Player1_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player1"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player1_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player1_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player2_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/num2" />
+
+            <EditText
+                android:id="@+id/Player2_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player2"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player2_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player2_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player3_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/num3" />
+
+            <EditText
+                android:id="@+id/Player3_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player3"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player3_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player3_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player4_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/num4" />
+
+            <EditText
+                android:id="@+id/Player4_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player4"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player4_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player4_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player5_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/num5" />
+
+            <EditText
+                android:id="@+id/Player5_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player5"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player5_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player5_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player6_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/num6" />
+
+            <EditText
+                android:id="@+id/Player6_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player6"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player6_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player6_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player7_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/num7" />
+
+            <EditText
+                android:id="@+id/Player7_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player7"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player7_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player7_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player8_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/num8" />
+
+            <EditText
+                android:id="@+id/Player8_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player8"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player8_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player8_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/Player9_order"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/num9" />
+
+            <EditText
+                android:id="@+id/Player9_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Player9"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player9_number"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/Player9_attrs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="null"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold|italic" />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

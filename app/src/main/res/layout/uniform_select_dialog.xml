@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radioradio"
+        android:layout_width="wrap_content"
+        android:layout_height="530dp"
+        android:layout_marginEnd="13dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:id="@+id/radio_barcelona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Barcelona"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <RadioButton
+            android:id="@+id/radio_boca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:text="Boca_Juniors"
+            android:textSize="28sp" />
+
+        <RadioButton
+            android:id="@+id/radio_ajax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:text="AJAX"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radio_arsenal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_weight="1"
+            android:text="Arsenal"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radio_bayern"
+            android:layout_width="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bayern_Munich"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/radio_dortmund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:text="Dortmund"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radio_celtics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:text="Celtics"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radio_sharlke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:text="Sharlke 04"
+            android:textSize="29sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/futsal_iv"
+        android:layout_alignTop="@+id/radioradio"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="46dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/futsal_iv2"
+        android:layout_below="@+id/imageView15"
+        android:layout_alignStart="@+id/imageView15" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/futsal_iv3"
+        android:layout_below="@+id/imageView16"
+        android:layout_alignStart="@+id/imageView16"
+        android:layout_marginTop="11dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/imageView17"
+        android:layout_below="@+id/imageView17"
+        app:srcCompat="@drawable/futsal_iv4" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/futsal_iv5"
+        android:layout_below="@+id/imageView18"
+        android:layout_alignStart="@+id/imageView18"
+        android:layout_marginTop="11dp" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/futsal_iv6"
+        android:layout_below="@+id/imageView19"
+        android:layout_alignStart="@+id/imageView19" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/imageView20"
+        android:layout_below="@+id/imageView20"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/futsal_iv7" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/imageView21"
+        android:layout_below="@+id/imageView21"
+        app:srcCompat="@drawable/futsal_iv8" />
+
+</RelativeLayout>

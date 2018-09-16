@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_toEndOf="@+id/imageView10"
+        android:text="Name :"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_age2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/tv_player2"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="27dp"
+        android:text="Age :"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_player2"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_alignTop="@+id/tv_age2"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_number2"
+        android:layout_alignStart="@+id/et_age"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/tv_number2"
+        android:layout_below="@+id/tv_number2"
+        android:layout_marginTop="28dp"
+        android:text="Position :"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/tv_age2"
+        android:layout_below="@+id/et_age"
+        android:layout_marginTop="27dp"
+        android:text="Number :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_position"
+        android:layout_alignEnd="@+id/et_number">
+
+        <RadioButton
+            android:id="@+id/rb_fw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Foward       (FW)"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:buttonTint="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rb_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MidFielder  (MF)"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:buttonTint="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rb_df"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Defender     (DF)"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:buttonTint="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rb_gk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GoalKeeper (GK)"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:buttonTint="@android:color/black" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tv_player2"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@drawable/images1" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/imageView10"
+        android:layout_alignTop="@+id/tv_age2"
+        app:srcCompat="@drawable/aaaa" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/imageView11"
+        android:layout_alignTop="@+id/tv_number2"
+        app:srcCompat="@drawable/exchange" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/imageView12"
+        android:layout_alignTop="@+id/tv_position"
+        app:srcCompat="@drawable/images45" />
+
+</RelativeLayout>

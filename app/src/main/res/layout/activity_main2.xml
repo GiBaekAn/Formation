@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/logo2"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/soccerBTN"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/soccerbackground3"
+        android:layout_marginStart="21dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/baseballBTN"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/footballBTN"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/footballbackground2"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/soccerBTN"
+        android:layout_alignEnd="@+id/logoutBTN"
+        android:layout_marginEnd="16dp" />
+
+    <ImageButton
+        android:id="@+id/baseballBTN"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/baseballbackground2"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/soccerBTN" />
+
+    <ImageButton
+        android:id="@+id/basketballBTN"
+        android:layout_width="150dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="150dp"
+        android:layout_alignEnd="@+id/footballBTN"
+        android:layout_alignTop="@+id/baseballBTN"
+        android:src="@drawable/basketballbackground2"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/logoutBTN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src = "@drawable/logout_new"
+        android:scaleType="fitXY"
+        android:layout_marginTop="13dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+</RelativeLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/soccerbackground"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv3_player1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        app:srcCompat="@drawable/foward" />
+
+    <ImageView
+        android:id="@+id/iv3_player2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv3_player1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        app:srcCompat="@drawable/foward" />
+
+    <ImageView
+        android:id="@+id/iv3_player3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iv3_player2"
+        android:layout_marginStart="49dp"
+        app:srcCompat="@drawable/mid" />
+
+    <ImageView
+        android:id="@+id/iv3_player4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv3_player3"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/iv3_player3"
+        app:srcCompat="@drawable/mid" />
+
+    <ImageView
+        android:id="@+id/iv3_player5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/iv3_player4"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/iv3_player2"
+        app:srcCompat="@drawable/mid" />
+
+    <ImageView
+        android:id="@+id/iv3_player6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv3_player2"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/iv3_player5"
+        app:srcCompat="@drawable/mid" />
+
+    <ImageView
+        android:id="@+id/iv3_player7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/iv3_player3"
+        android:layout_below="@+id/iv3_player4"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/defender" />
+
+    <ImageView
+        android:id="@+id/iv3_player8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/iv3_player4"
+        android:layout_alignTop="@+id/iv3_player7"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/defender" />
+
+    <ImageView
+        android:id="@+id/iv3_player9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/iv3_player5"
+        android:layout_alignTop="@+id/iv3_player8"
+        app:srcCompat="@drawable/defender" />
+
+    <ImageView
+        android:id="@+id/iv3_player10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/iv3_player6"
+        android:layout_alignTop="@+id/iv3_player7"
+        app:srcCompat="@drawable/defender" />
+
+    <ImageView
+        android:id="@+id/iv3_player11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv3_player8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/goalkeeper" />
+
+    <TextView
+        android:id="@+id/tv3_player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/iv3_player1"
+        android:layout_centerHorizontal="true"
+        android:text="Player1" />
+
+    <TextView
+        android:id="@+id/tv3_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv3_player2"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:text="Player2" />
+
+    <TextView
+        android:id="@+id/tv3_player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv3_player3"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/iv3_player3"
+        android:text="Player3" />
+
+    <TextView
+        android:id="@+id/tv3_player4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv3_player4"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_toEndOf="@+id/tv3_player3"
+        android:text="Player4" />
+
+    <TextView
+        android:id="@+id/tv3_player5"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv3_player5"
+        android:layout_toStartOf="@+id/iv3_player10"
+        android:text="Player5" />
+
+    <TextView
+        android:id="@+id/tv3_player6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player6"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/iv3_player6"
+        android:layout_alignEnd="@+id/iv3_player6" />
+
+    <TextView
+        android:id="@+id/tv3_player7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv3_player7"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_toStartOf="@+id/tv3_player4"
+        android:text="Player7" />
+
+    <TextView
+        android:id="@+id/tv3_player8"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:text="Player8"
+        android:layout_below="@+id/iv3_player8"
+        android:layout_alignStart="@+id/iv3_player8" />
+
+    <TextView
+        android:id="@+id/tv3_player9"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:text="Player9"
+        android:layout_below="@+id/iv3_player9"
+        android:layout_alignEnd="@+id/iv3_player9" />
+
+    <TextView
+        android:id="@+id/tv3_player10"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv3_player6"
+        android:layout_below="@+id/iv3_player10"
+        android:text="Player10" />
+
+    <TextView
+        android:id="@+id/tv3_player11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv3_player11"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:text="Player11" />
+
+    <ImageView
+        android:id="@+id/iv3_mute"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/mute" />
+
+    <TextView
+        android:id="@+id/tv3_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="TeamName"
+        android:textColor="@android:color/white"
+        android:textSize="29sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/share3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iv3_mute"
+        app:srcCompat="@drawable/share" />
+</RelativeLayout>

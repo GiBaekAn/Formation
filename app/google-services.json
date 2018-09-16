@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "395845776501",
+    "firebase_url": "https://formation-d6f67.firebaseio.com",
+    "project_id": "formation-d6f67",
+    "storage_bucket": "formation-d6f67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395845776501:android:b8d8ed937e61c85a",
+        "android_client_info": {
+          "package_name": "com.example.user.formation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395845776501-td8a5ka683td82ld6e037mib3kgk8mai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5rPn6W0rUTHEkSpiORZa76b7Wq31RPWc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

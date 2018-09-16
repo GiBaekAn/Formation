@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/footbalbackground"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/futsal_player1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        app:srcCompat="@drawable/futsal_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/futsal_player2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/futsal_iv"
+        android:layout_alignTop="@+id/futsal_player1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp" />
+
+    <ImageView
+        android:id="@+id/futsal_player3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="26dp"
+        app:srcCompat="@drawable/futsal_iv"
+        android:layout_below="@+id/futsal_player1"
+        android:layout_alignEnd="@+id/futsal_player1"
+        android:layout_marginTop="72dp" />
+
+    <ImageView
+        android:id="@+id/futsal_player4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="27dp"
+        app:srcCompat="@drawable/futsal_iv"
+        android:layout_alignTop="@+id/futsal_player3"
+        android:layout_alignStart="@+id/futsal_player2" />
+
+    <ImageView
+        android:id="@+id/futsal_player5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="19dp"
+        app:srcCompat="@drawable/futsal_iv"
+        android:layout_below="@+id/futsal_player4"
+        android:layout_toEndOf="@+id/futsal_player3" />
+
+    <ImageView
+        android:id="@+id/mutebtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/mute" />
+
+    <TextView
+        android:id="@+id/tvv_player1"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:text="Player1"
+        android:layout_below="@+id/futsal_player1"
+        android:layout_alignEnd="@+id/futsal_player1" />
+
+    <TextView
+        android:id="@+id/tvv_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:text="Player2"
+        android:layout_below="@+id/futsal_player2"
+        android:layout_alignStart="@+id/futsal_player2" />
+
+    <TextView
+        android:id="@+id/tvv_player3"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/futsal_player3"
+        android:layout_alignTop="@+id/futsal_player5"
+        android:text="Player3" />
+
+    <TextView
+        android:id="@+id/tvv_player4"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/futsal_player4"
+        android:layout_below="@+id/futsal_player4"
+        android:text="Player4" />
+
+    <TextView
+        android:id="@+id/tvv_player5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/futsal_player5"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/futsal_player5"
+        android:text="Player5" />
+
+    <ImageView
+        android:id="@+id/settingbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="11dp"
+        app:srcCompat="@drawable/setting"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/share10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/mutebtn"
+        android:layout_below="@+id/mutebtn"
+        app:srcCompat="@drawable/share" />
+
+</RelativeLayout>

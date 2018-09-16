@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageviews"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="37dp"
+        app:srcCompat="@drawable/images1" />
+
+    <TextView
+        android:id="@+id/textview2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageviews"
+        android:layout_marginStart="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_toEndOf="@+id/imageviews"
+        android:text="Name :" />
+
+    <EditText
+        android:id="@+id/edittext_futsal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd"
+        android:layout_alignTop="@+id/textview2_name"
+        android:layout_toEndOf="@+id/textview2_number" />
+
+    <ImageView
+        android:id="@+id/imageviews2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="31dp"
+        app:srcCompat="@drawable/tag1"
+        android:layout_below="@+id/edittext_futsal_name"
+        android:layout_alignStart="@+id/imageviews" />
+
+    <TextView
+        android:id="@+id/textview2_number"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview2_name"
+        android:layout_alignTop="@+id/imageviews2"
+        android:text="Number :" />
+
+    <EditText
+        android:id="@+id/edittext_futsal_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd"
+        android:layout_alignBottom="@+id/imageviews2"
+        android:layout_alignStart="@+id/edittext_futsal_name" />
+
+    <ImageView
+        android:id="@+id/imageviews3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/images45"
+        android:layout_below="@+id/imageviews2"
+        android:layout_alignStart="@+id/imageviews2" />
+
+    <TextView
+        android:id="@+id/textview2_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_alignStart="@+id/textview2_number"
+        android:layout_alignTop="@+id/imageviews3"
+        android:text="Age :" />
+
+    <EditText
+        android:id="@+id/edittext_futsal_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edittext_futsal_number"
+        android:layout_alignTop="@+id/textview2_age"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd" />
+</RelativeLayout>

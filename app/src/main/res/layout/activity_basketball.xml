@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/basketballbackground"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/basketball_pg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="231dp"
+        app:srcCompat="@drawable/basketball_pg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/basketball_sg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/basketball_sg"
+        android:layout_alignTop="@+id/basketball_pg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp" />
+
+    <ImageView
+        android:id="@+id/basketball_pf"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/basketball_pf"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/basketball_pg"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="48dp" />
+
+    <ImageView
+        android:id="@+id/basketball_C"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="39dp"
+        app:srcCompat="@drawable/basketball_c"
+        android:layout_below="@+id/basketball_pg"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/basketball_sf"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/basketball_sg"
+        android:layout_alignTop="@+id/basketball_pf"
+        android:layout_marginEnd="36dp"
+        app:srcCompat="@drawable/basketball_sf" />
+
+    <TextView
+        android:id="@+id/text_pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/basketball_pg"
+        android:layout_below="@+id/basketball_pg"
+        android:text="Player1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_sg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_pg"
+        android:layout_alignStart="@+id/basketball_sg"
+        android:text="Player2"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/basketball_C"
+        android:layout_below="@+id/basketball_C"
+        android:text="Player3"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_pf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player4"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/basketball_sf"
+        android:layout_alignEnd="@+id/basketball_pf" />
+
+    <TextView
+        android:id="@+id/text_sf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/basketball_sf"
+        android:layout_below="@+id/basketball_sf"
+        android:text="Player5"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/mutebutton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/mute"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/text_pg" />
+
+    <ImageView
+        android:id="@+id/share9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/mutebutton2"
+        android:layout_below="@+id/mutebutton2"
+        app:srcCompat="@drawable/share" />
+
+</RelativeLayout>

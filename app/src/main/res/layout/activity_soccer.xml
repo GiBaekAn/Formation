@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/soccerbackground2"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_team"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="166dp"
+        android:src="@drawable/name"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/et_shape" />
+
+    <EditText
+        android:id="@+id/et_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="TeamName"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/iv_shape"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp" />
+
+    <ImageView
+        android:id="@+id/iv_shape"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/formation"
+        android:layout_below="@+id/iv_team"
+        android:layout_toStartOf="@+id/et_shape" />
+
+    <EditText
+        android:id="@+id/et_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_shape"
+        android:layout_alignStart="@+id/et_team"
+        android:backgroundTint="@android:color/white"
+        android:ems="8"
+        android:hint="Formation"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/ib_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ibb_search"
+        android:layout_alignBottom="@+id/et_shape"
+        android:layout_alignEnd="@+id/et_team" />
+
+    <ImageButton
+        android:id="@+id/ib_make"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="79dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitXY"
+        android:src="@drawable/make"
+        android:layout_below="@+id/iv_shape"
+        android:layout_alignStart="@+id/iv_shape" />
+
+    <ImageButton
+        android:id="@+id/ibRegist"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:background="@color/colorGreen"
+        android:scaleType="fitXY"
+        android:src="@drawable/canclelele"
+        android:layout_alignTop="@+id/ib_make"
+        android:layout_alignEnd="@+id/ib_search" />
+
+    <ImageView
+        android:id="@+id/mutebutton3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/mute"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

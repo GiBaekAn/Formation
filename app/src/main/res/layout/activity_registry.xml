@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/logo"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_email"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/ib_email"
+        android:layout_marginTop="229dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/iv_password"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ib_password"
+        android:layout_marginTop="59dp"
+        android:layout_alignTop="@+id/iv_email"
+        android:layout_alignStart="@+id/iv_email" />
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/iv_password"
+        android:layout_below="@+id/iv_email"
+        android:layout_marginTop="47dp"
+        android:src="@drawable/ib_check" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_check"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/iv_password"
+        android:backgroundTint="@android:color/white"
+        android:ems="12"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_toEndOf="@+id/iv_password"
+        android:backgroundTint="@android:color/white"
+        android:ems="12"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/et_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_password"
+        android:layout_toEndOf="@+id/iv_check"
+        android:backgroundTint="@android:color/white"
+        android:ems="12"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/ib_register"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitXY"
+        android:src="@drawable/register"
+        android:layout_below="@+id/iv_check"
+        android:layout_alignStart="@+id/iv_check"
+        android:layout_marginStart="52dp" />
+
+    <ImageButton
+        android:id="@+id/ibRegist"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitXY"
+        android:src="@drawable/ib_cancel"
+        android:layout_marginEnd="53dp"
+        android:layout_alignTop="@+id/ib_register"
+        android:layout_alignEnd="@+id/et_check" />
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:textAllCaps="false"
+        android:text="Name :"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView6" />
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textview_name"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textview_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Height :"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/edittext_name"
+        android:layout_alignStart="@+id/textview_name" />
+
+    <EditText
+        android:id="@+id/edittext_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edittext_name"
+        android:layout_alignTop="@+id/textview_height"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:hint="(cm)"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textview_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Number :"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/edittext_height"
+        android:layout_alignStart="@+id/textview_height" />
+
+    <EditText
+        android:id="@+id/edittext_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edittext_height"
+        android:layout_alignTop="@+id/textview_number"
+        android:backgroundTint="@android:color/black"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textview_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview_number"
+        android:layout_below="@+id/edittext_number"
+        android:layout_marginTop="30dp"
+        android:text="Position :"
+        android:textColor="@android:color/black"
+        android:textSize="29sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textview_position"
+        android:layout_alignEnd="@+id/edittext_number">
+
+        <RadioButton
+            android:id="@+id/radio_pg"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:text="포인트가드 (PG)" />
+
+        <RadioButton
+            android:id="@+id/radio_sg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="슈팅 가드 (SG)" />
+
+        <RadioButton
+            android:id="@+id/radio_pf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="파워 포워드 (PF)" />
+
+        <RadioButton
+            android:id="@+id/radio_sf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="스몰 포워드 (SF)" />
+
+        <RadioButton
+            android:id="@+id/radio_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="센      터 (C)" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@drawable/images1"
+        android:layout_alignBottom="@+id/textview_name"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/imageView6"
+        android:layout_alignTop="@+id/textview_height"
+        app:srcCompat="@drawable/images4" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_alignTop="@+id/textview_number"
+        app:srcCompat="@drawable/images22" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textview_position"
+        android:layout_alignStart="@+id/imageView8"
+        app:srcCompat="@drawable/images45" />
+
+</RelativeLayout>
